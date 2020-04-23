@@ -3,9 +3,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CoreModule } from '../../core/core.module';
 @NgModule({
-  imports: [LayoutRoutingModule, NgbModule],
+  imports: [LayoutRoutingModule, CoreModule],
   declarations: [LayoutComponent, HeaderComponent, FooterComponent]
 })
 export class LayoutModule {}
