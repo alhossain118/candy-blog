@@ -1,9 +1,8 @@
 import { NgModule } from "@angular/core";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { SubscribeEmailComponent } from "./components/subscribe-email/subscribe-email.component";
 import { TestComponent } from "./components/test/test.component";
 
-const components = [TestComponent, SubscribeEmailComponent];
+const components = [TestComponent];
 const modules = [NgbModule];
 
 @NgModule({

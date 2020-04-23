@@ -1,12 +1,23 @@
 import { NgModule } from "@angular/core";
+import { CoreModule } from "../../core/core.module";
+import { AboutMeComponent } from "../components/about-me/about-me.component";
+import { ArticleOverviewComponent } from "../components/article-overview/article-overview.component";
+import { SubscribeEmailComponent } from "../components/subscribe-email/subscribe-email.component";
+import { HomeComponent } from "../home/home.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { LayoutRoutingModule } from "./layout-routing.module";
 import { LayoutComponent } from "./layout.component";
-import { CoreModule } from "../../core/core.module";
-import { HomeComponent } from "../home/home.component";
 @NgModule({
   imports: [LayoutRoutingModule, CoreModule],
-  declarations: [LayoutComponent, HeaderComponent, FooterComponent, HomeComponent]
+  declarations: [
+    LayoutComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    SubscribeEmailComponent,
+    AboutMeComponent,
+    ArticleOverviewComponent,
+  ],
 })
 export class LayoutModule {}
