@@ -1,19 +1,19 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from '../home/home.component';
-import { LayoutComponent } from './layout.component';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { HomeComponent } from "../home/home.component";
+import { LayoutComponent } from "./layout.component";
 
 const routes: Routes = [
   {
-    path: '',
+    path: "",
     component: LayoutComponent,
     children: [
       {
-        path: '',
-        redirectTo: 'home',
+        path: "",
+        redirectTo: "home",
       },
       {
-        path: 'home',
+        path: "home",
         component: HomeComponent,
       },
     ],
