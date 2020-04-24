@@ -26,7 +26,7 @@
               <h4>Subscribe to our blog</h4>
             </div>
             <p></p>
-            <form [formGroup]="subscribeForm">
+            <form [formGroup]="subscribeForm" (submit)="addSubscriber()">
               <div class="form-group">
                 <input
                   type="text"
@@ -41,11 +41,17 @@
                   class="form-control"
                   formControlName="email"
                   type="email"
+                  name="EMAIL"
+                  id="mce-EMAIL"
                   placeholder="Email address"
                 />
               </div>
               <div class="form-group">
-                <button type="button" class="btn btn-default btn-block"  (click)="addSubscriber()">
+                <button
+                  type="submit"
+                  class="btn btn-default btn-block"
+                  (click)="addSubscriber()"
+                >
                   Subscribe
                 </button>
               </div>

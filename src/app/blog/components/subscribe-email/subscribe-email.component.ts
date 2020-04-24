@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
+import { EmailService } from "@app/core/services/email.service";
 import { emailValidator } from "@app/core/validators/email-pattern.validator";
 import { patternValidator } from "@app/core/validators/patterm.validator";
 import { ModalDismissReasons, NgbModal } from "@ng-bootstrap/ng-bootstrap";
@@ -10,7 +11,10 @@ import { ModalDismissReasons, NgbModal } from "@ng-bootstrap/ng-bootstrap";
   styleUrls: ["./subscribe-email.component.scss"],
 })
 export class SubscribeEmailComponent {
-  constructor(private modalService: NgbModal) {}
+  constructor(
+    private modalService: NgbModal,
+    private emailService: EmailService
+  ) {}
 
   public closeResult = "";
 
@@ -18,7 +22,7 @@ export class SubscribeEmailComponent {
     firstName: new FormControl(null, [
       Validators.required,
       Validators.maxLength(30),
-      patternValidator(/^[A-Za-z]+^/, "firstName"),
+      patternValidator(/^[A-Za-z]+$/, "firstName"),
     ]),
     email: new FormControl(null, [
       Validators.required,
@@ -29,6 +33,24 @@ export class SubscribeEmailComponent {
 
   public addSubscriber(): void {
     console.log(this.subscribeForm);
+    if (this.subscribeForm.invalid) {
+      return;
+    }
+
+    const formData = {
+      firstName: this.subscribeForm.get("firstName").value,
+      email: this.subscribeForm.get("email").value,
+    };
+
+    this.emailService.subscribeToList(formData).subscribe(
+      (response) => {
+        console.log("response received", response);
+      },
+      (error) => {
+        console.error(error);
+        console.log("error received", error);
+      }
+    );
   }
 
   public open(content): void {
