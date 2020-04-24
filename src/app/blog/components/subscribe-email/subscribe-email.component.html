@@ -4,61 +4,26 @@
     Subscribe to get the latest news and goodies delivered directly to your
     inbox
   </p>
-  <button class="btn btn-default btn-sm" (click)="open(content)">
-    Subscribe
-  </button>
-</div>
 
-<ng-template #content let-modal>
-  <div class="modal-content border-0">
-    <div class="modal-body">
-      <button
-        type="button"
-        class="close"
-        (click)="modal.dismiss('Cross click')"
-      >
-        <span aria-hidden="true">×</span>
-      </button>
-      <div class="row no-gutters">
-        <div class="col-12">
-          <div class="padding_eight_all">
-            <div class="heading_s1">
-              <h4>Subscribe to our blog</h4>
-            </div>
-            <p></p>
-            <form [formGroup]="subscribeForm" (submit)="addSubscriber()">
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  formControlName="firstName"
-                  type="text"
-                  placeholder="First Name"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  class="form-control"
-                  formControlName="email"
-                  type="email"
-                  name="EMAIL"
-                  id="mce-EMAIL"
-                  placeholder="Email address"
-                />
-              </div>
-              <div class="form-group">
-                <button
-                  type="submit"
-                  class="btn btn-default btn-block"
-                  (click)="addSubscriber()"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+  <form [formGroup]="subscribeForm" (submit)="addSubscriber()">
+    <div class="form-group input-group-md">
+      <input
+        class="form-control "
+        formControlName="email"
+        type="email"
+        name="EMAIL"
+        id="mce-EMAIL"
+        placeholder="Email address"
+      />
     </div>
-  </div>
-</ng-template>
+    <button
+      class="btn btn-default btn-sm"
+      type="submit"
+      [disabled]="subscribeForm.invalid"
+      class="btn btn-default btn-block"
+      (click)="addSubscriber()"
+    >
+      Subscribe
+    </button>
+  </form>
+</div>

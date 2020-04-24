@@ -16,7 +16,6 @@ export class EmailService {
   public subscribeToList(data) {
     console.log("data", data);
     const params = new HttpParams()
-      .set("NAME", data.firstName)
       .set("EMAIL", data.email)
       .set("b_d1d4d61c222c5120f554c6ca3_1a6048a792", ""); // hidden input name
 
