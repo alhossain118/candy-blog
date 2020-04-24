@@ -1,27 +1,26 @@
-<div class="blog_post">
-    <div class="blog_img">
-      <a href="#">
-        <img src="assets/images/candy-sample1.jpg" alt="blog_img1" />
-      </a>
-    </div>
-    <div class="blog_content">
-      <div class="blog_text">
-        <h5 class="blog_heading">
-          <a href="#">The Master Of Human Happiness</a>
-        </h5>
-        <ul class="blog_meta">
-          <li>
-            <a href="#"
-              ><i class="ti-calendar"></i>
-              <span>April 14, 2018</span></a
-            >
-          </li>
-        </ul>
-        <p>
-          Ipsum generators on the Internet tend to repeat predefined
-          chunks as necessary, making this generator on the Internet.
-        </p>
-        <button class="btn btn-default btn-sm">Read More <i class="fas fa-play"></i></button>
+<div *ngIf="articles">
+    <div class="blog_post" *ngFor="let article of articles">
+        <div class="blog_img">
+          <a href="#">
+            <img [src]="article.image" alt="blog_img1" />
+          </a>
+        </div>
+        <div class="blog_content">
+          <div class="blog_text">
+            <h5 class="blog_heading">
+              <a href="#">{{ article.header }}</a>
+            </h5>
+            <ul class="blog_meta">
+              <li>
+                <a href="#"
+                  ><i class="ti-calendar"></i>
+                  <span>{{ article.date }}</span></a
+                >
+              </li>
+            </ul>
+            <p>{{ article.description }}</p>
+            <button class="btn btn-default btn-sm">Read More &nbsp; <i class="fas fa-play"></i></button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+</div>

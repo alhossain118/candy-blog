@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
+import { ArticleOverview } from "@app/blog/article-data/article-data";
 
 @Component({
   selector: "candy-article-overview",
@@ -6,5 +7,5 @@ import { Component } from "@angular/core";
   styleUrls: ["./article-overview.component.scss"],
 })
 export class ArticleOverviewComponent {
-  public isMenuCollapsed = true;
+  @Input() public articles: ArticleOverview[];
 }
