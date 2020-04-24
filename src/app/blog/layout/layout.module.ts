@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { CoreModule } from "../../core/core.module";
 import { AboutMeComponent } from "../components/about-me/about-me.component";
 import { ArticleOverviewComponent } from "../components/article-overview/article-overview.component";
@@ -9,7 +10,7 @@ import { HeaderComponent } from "./header/header.component";
 import { LayoutRoutingModule } from "./layout-routing.module";
 import { LayoutComponent } from "./layout.component";
 @NgModule({
-  imports: [LayoutRoutingModule, CoreModule],
+  imports: [LayoutRoutingModule, CoreModule, FormsModule, ReactiveFormsModule],
   declarations: [
     LayoutComponent,
     HeaderComponent,

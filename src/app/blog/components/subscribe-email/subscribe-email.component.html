@@ -1,26 +1,58 @@
 <div class="widget">
-    <h5 class="widget_title">Subscribe Newsletter</h5>
-    <p>
-      Subscribe to get the latest news and goodies delivered directly to your inbox
-    </p>
-    <button class="btn btn-default btn-sm">Subscribe</button>
-    <!-- <div class="newsletter_form">
-      <form>
-        <input
-          type="text"
-          required=""
-          class="form-control form-control-sm rounded-input"
-          placeholder="Your email address.."
-        />
-        <button
-          type="submit"
-          title="Subscribe"
-          class="btn btn-default btn-radius btn-sm"
-          name="submit"
-          value="Submit"
-        >
-          subscribe
-        </button>
-      </form>
-    </div> -->
+  <h5 class="widget_title">Subscribe Newsletter</h5>
+  <p>
+    Subscribe to get the latest news and goodies delivered directly to your
+    inbox
+  </p>
+  <button class="btn btn-default btn-sm" (click)="open(content)">
+    Subscribe
+  </button>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-content border-0">
+    <div class="modal-body">
+      <button
+        type="button"
+        class="close"
+        (click)="modal.dismiss('Cross click')"
+      >
+        <span aria-hidden="true">×</span>
+      </button>
+      <div class="row no-gutters">
+        <div class="col-12">
+          <div class="padding_eight_all">
+            <div class="heading_s1">
+              <h4>Subscribe to our blog</h4>
+            </div>
+            <p></p>
+            <form [formGroup]="subscribeForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="firstName"
+                  type="text"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  formControlName="email"
+                  type="email"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-default btn-block"  (click)="addSubscriber()">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</ng-template>
