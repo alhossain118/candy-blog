@@ -1,19 +1,49 @@
 <div *ngIf="article">
-    <div class="blog_post" >
+  <div class="blog_post">
+    <div class="blog_content">
+      <div class="blog_text">
+        <h2 class="blog_heading">
+          {{ article.header }}
+        </h2>
+        <ul class="blog_meta">
+          <li>
+            <i class="fas fa-calendar"></i>
+            <span>{{ article.date }}</span>
+          </li>
+        </ul>
+        <p>
+          {{ article.description }} I had first heard about sour strips from my
+          brother when he was on his way to Houston to workout at the Alphalete
+          gym. He had called me to let me know that the gym had some sour candy
+          in stock and it was supposedly what people were calling "The best
+          candy they've ever had". I checked online and it was already sold out
+          online and would take a while before they restocked, so on a whim I
+          told me to get $20 worth of the candy.
+        </p>
 
-        <div class="blog_content">
-          <div class="blog_text">
-            <h2 class="blog_heading">
-            {{ article.header }}
-            </h2>
-            <ul class="blog_meta">
-              <li>
-                  <i class="fas fa-calendar"></i>
-                  <span>{{ article.date }}</span>
-              </li>
-            </ul>
-            <p>{{ article.description }}</p>
-          </div>
-        </div>
+        <p>
+            {{ article.description }} I had first heard about sour strips from my
+            brother when he was on his way to Houston to workout at the Alphalete
+            gym. He had called me to let me know that the gym had some sour candy
+            in stock and it was supposedly what people were calling "The best
+            candy they've ever had". I checked online and it was already sold out
+            online and would take a while before they restocked, so on a whim I
+            told me to get $20 worth of the candy.
+          </p>
+
+          <img src="assets\images\sour-strips\strawberry.jpg" alt="">
+          <img src="assets\images\sour-strips\strawberry.jpg" alt="">
+
+          <p>
+            {{ article.description }} I had first heard about sour strips from my
+            brother when he was on his way to Houston to workout at the Alphalete
+            gym. He had called me to let me know that the gym had some sour candy
+            in stock and it was supposedly what people were calling "The best
+            candy they've ever had". I checked online and it was already sold out
+            online and would take a while before they restocked, so on a whim I
+            told me to get $20 worth of the candy.
+          </p>
       </div>
+    </div>
+  </div>
 </div>

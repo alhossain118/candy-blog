@@ -5,8 +5,10 @@
         </div>
         <div class="blog_content">
           <div class="blog_text">
-            <h5 class="blog_heading" [routerLink]="['/', article.link]">
-             {{ article.header }}
+            <h5 class="blog_heading">
+             <a [routerLink]="['/', article.link]">
+               {{ article.header }}
+             </a>
             </h5>
             <ul class="blog_meta">
               <li>
