@@ -8,7 +8,7 @@
         <div class="blog_content">
           <div class="blog_text">
             <h5 class="blog_heading">
-              <a href="#">{{ article.header }}</a>
+              <a [routerLink]="['/home']">{{ article.header }}</a>
             </h5>
             <ul class="blog_meta">
               <li>
@@ -19,7 +19,7 @@
               </li>
             </ul>
             <p>{{ article.description }}</p>
-            <button class="btn btn-default btn-sm">Read More &nbsp; <i class="fas fa-play"></i></button>
+            <button class="btn btn-default btn-sm" [routerLink]="['/', article.link]">Read More &nbsp; <i class="fas fa-play"></i></button>
           </div>
         </div>
       </div>
