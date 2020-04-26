@@ -1,6 +1,5 @@
 import { Component, Input } from "@angular/core";
 import { ArticleOverview } from "@app/blog/article-data/article-data";
-import { Router } from "@angular/router";
 
 @Component({
   selector: "candy-article-overview",

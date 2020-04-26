@@ -1,9 +1,7 @@
 <div *ngIf="articles">
     <div class="blog_post" *ngFor="let article of articles">
         <div class="blog_img">
-          <a href="#">
             <img [src]="article.image" alt="blog_img1" />
-          </a>
         </div>
         <div class="blog_content">
           <div class="blog_text">
@@ -12,10 +10,9 @@
             </h5>
             <ul class="blog_meta">
               <li>
-                <a href="#"
-                  ><i class="ti-calendar"></i>
-                  <span>{{ article.date }}</span></a
-                >
+               
+                  <i class="fas fa-calendar"></i>
+                  <span>{{ article.date }}</span>
               </li>
             </ul>
             <p>{{ article.description }}</p>
