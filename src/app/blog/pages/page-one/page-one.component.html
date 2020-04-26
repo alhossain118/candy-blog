@@ -1,6 +1,19 @@
-<h1>Blog Page One</h1>
-<h1>Blog Page One</h1>
-<h1>Blog Page One</h1>
-<h1>Blog Page One</h1>
-<h1>Blog Page One</h1>
-<h1>Blog Page One</h1>
+<div *ngIf="article">
+    <div class="blog_post" >
+
+        <div class="blog_content">
+          <div class="blog_text">
+            <h2 class="blog_heading">
+            {{ article.header }}
+            </h2>
+            <ul class="blog_meta">
+              <li>
+                  <i class="fas fa-calendar"></i>
+                  <span>{{ article.date }}</span>
+              </li>
+            </ul>
+            <p>{{ article.description }}</p>
+          </div>
+        </div>
+      </div>
+</div>
