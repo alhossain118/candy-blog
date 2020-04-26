@@ -8,13 +8,5 @@ import { Router } from "@angular/router";
   styleUrls: ["./article-overview.component.scss"],
 })
 export class ArticleOverviewComponent {
-  constructor(private router: Router) {
-
-  }
   @Input() public articles: ArticleOverview[];
-
-  public navigateToBlogArticle(link: string): void {
-    console.log("read more", link);
-    this.router.navigate([`${link}`]);
-  }
 }
