@@ -8,6 +8,20 @@ import { Component, Input } from "@angular/core";
 export class YoutubePlayerComponent {
   @Input() public id = "LvDYgSWT8F0";
 
+  public get windowContainer() {
+    if (window.innerWidth < 400) {
+      return {
+        height: window.innerWidth - 100,
+        width: window.innerWidth,
+      };
+    } else {
+      return {
+        height: 400,
+        width: 600,
+      };
+    }
+  }
+
   public playerVars = {
     cc_lang_pref: "en",
   };
