@@ -1,0 +1,9 @@
+<youtube-player
+  [videoId]="id"
+  (ready)="savePlayer($event)"
+  (change)="onStateChange($event)"
+  width="800"
+  height="500"
+  [playerVars]="playerVars"
+>
+</youtube-player>

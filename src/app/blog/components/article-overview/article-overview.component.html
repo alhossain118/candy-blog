@@ -1,25 +1,27 @@
 <div *ngIf="articles">
-    <div class="blog_post" *ngFor="let article of articles">
-        <div class="blog_img">
-            <img [src]="article.image" alt="blog_img1" />
+  <div class="blog_post" *ngFor="let article of articles">
+    <div class="blog_img">
+      <img [src]="article.image" alt="blog_img1" />
+    </div>
+    <div class="blog_content">
+      <div class="blog_text">
+        <h5 class="blog_heading">
+          <a [routerLink]="['/', article.link]">
+            {{ article.header }}
+          </a>
+        </h5>
+        <div class="blog_meta">
+          <i class="fas fa-calendar"></i>
+          <span>{{ article.date }}</span>
         </div>
-        <div class="blog_content">
-          <div class="blog_text">
-            <h5 class="blog_heading">
-             <a [routerLink]="['/', article.link]">
-               {{ article.header }}
-             </a>
-            </h5>
-            <ul class="blog_meta">
-              <li>
-               
-                  <i class="fas fa-calendar"></i>
-                  <span>{{ article.date }}</span>
-              </li>
-            </ul>
-            <p>{{ article.description }}</p>
-            <button class="btn btn-default btn-sm" [routerLink]="['/', article.link]">Read More &nbsp; <i class="fas fa-play"></i></button>
-          </div>
-        </div>
+        <p>{{ article.description }}</p>
+        <button
+          class="btn btn-default btn-sm"
+          [routerLink]="['/', article.link]"
+        >
+          Read More &nbsp; <i class="fas fa-play"></i>
+        </button>
       </div>
+    </div>
+  </div>
 </div>

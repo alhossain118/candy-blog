@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { NgxYoutubePlayerModule } from "ngx-youtube-player";
 import { CoreModule } from "../../core/core.module";
 import { AboutMeComponent } from "../components/about-me/about-me.component";
 import { ArticleOverviewComponent } from "../components/article-overview/article-overview.component";
@@ -10,8 +11,16 @@ import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { LayoutRoutingModule } from "./layout-routing.module";
 import { LayoutComponent } from "./layout.component";
+import { YoutubePlayerComponent } from "../../core/components/youtube-player/youtube-player.component";
+
 @NgModule({
-  imports: [LayoutRoutingModule, CoreModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    LayoutRoutingModule,
+    CoreModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgxYoutubePlayerModule.forRoot(),
+  ],
   declarations: [
     LayoutComponent,
     HeaderComponent,
@@ -21,6 +30,7 @@ import { LayoutComponent } from "./layout.component";
     AboutMeComponent,
     ArticleOverviewComponent,
     BlogPageOneComponent,
+    YoutubePlayerComponent,
   ],
 })
 export class LayoutModule {}
