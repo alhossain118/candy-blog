@@ -34,5 +34,15 @@ export const Articles: ArticleOverview[] = [
     image: "assets/images/sour-strips/retail-group-image.jpg",
     header: "My Journey into Sour Strips",
     link: "my-journey-into-sour-strips"
-  }
+  },
+  {
+    date: "April 14, 2018",
+    description: `A new sold out sour candy? Whattt?
+    Could there really be sour candy that actually delivers?
+    Or is it just is over-hyped?`,
+    image: "assets/images/sour-strips/retail-group-image.jpg",
+    header: "My Journey into Sour Strips",
+    link: "my-journey-into-sour-strips"
+  },
+
 ];

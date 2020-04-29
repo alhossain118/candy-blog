@@ -1,27 +1,26 @@
 <div *ngIf="articles">
-  <div class="blog_post" *ngFor="let article of articles">
-    <div class="blog_img">
-      <img [src]="article.image" alt="blog_img1" />
-    </div>
-    <div class="blog_content">
-      <div class="blog_text">
-        <h5 class="blog_heading">
-          <a [routerLink]="['/', article.link]">
-            {{ article.header }}
-          </a>
-        </h5>
-        <div class="blog_meta">
-          <i class="fas fa-calendar"></i>
-          <span>{{ article.date }}</span>
+  <div class="blog_post" *ngFor="let article of articles; let i = index">
+    <div >
+      <div class="row">
+        <ng-container *ngIf="i === 0">
+        <div class="col-lg-8">
+          <candy-base-article [article]="article"></candy-base-article>
         </div>
-        <p>{{ article.description }}</p>
-        <button
-          class="btn btn-default btn-sm"
-          [routerLink]="['/', article.link]"
-        >
-          Read More &nbsp; <i class="fas fa-play"></i>
-        </button>
+          <div class="col-lg-4">
+            <div class="sidebar">
+              <candy-about-me></candy-about-me>
+              <candy-subscribe-email></candy-subscribe-email>
+            </div>
+          </div>
+        </ng-container>
+        <ng-container *ngIf="i !== 0">
+          <candy-base-article [article]="article"></candy-base-article>
+        </ng-container>
       </div>
     </div>
+    <!-- <div *ngIf="i !== 1">
+      <candy-base-article [article]="article"></candy-base-article>
+      
+    </div> -->
   </div>
 </div>

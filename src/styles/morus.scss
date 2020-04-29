@@ -2720,7 +2720,7 @@ header.vertical_menu .navbar-collapse .navbar-nav {
 .blog_article .blog_post,
 .blog_small_grid .blog_post {
 	float: left;
-	width: 50%;
+	width: 33%;
 	padding: 0 15px;
 }
 .blog_small_grid .blog_post:nth-child(2n+1) {
@@ -2735,7 +2735,7 @@ header.vertical_menu .navbar-collapse .navbar-nav {
 	width: 100%;
 }
 .blog_article.blog_grid_module .blog_post:nth-child(3n) {
-	width: 50%;
+	width: 33%;
 	float: left;
 }
 .cat_bg {

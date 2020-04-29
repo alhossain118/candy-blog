@@ -1,0 +1,23 @@
+<div class="blog_img" *ngIf="article">
+    <img [src]="article.image" alt="blog_img1" />
+  </div>
+  <div class="blog_content">
+    <div class="blog_text">
+      <h5 class="blog_heading">
+        <a [routerLink]="['/', article.link]">
+          {{ article.header }}
+        </a>
+      </h5>
+      <div class="blog_meta">
+        <i class="fas fa-calendar"></i>
+        <span>{{ article.date }}</span>
+      </div>
+      <p>{{ article.description }}</p>
+      <button
+        class="btn btn-default btn-sm"
+        [routerLink]="['/', article.link]"
+      >
+        Read More &nbsp; <i class="fas fa-play"></i>
+      </button>
+    </div>
+  </div>
