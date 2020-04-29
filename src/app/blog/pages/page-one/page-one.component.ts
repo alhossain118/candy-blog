@@ -6,5 +6,8 @@ import { ArticleOverview, Articles } from "@app/blog/article-data/article-data";
   styleUrls: ["./page-one.component.scss"],
 })
 export class BlogPageOneComponent {
+  constructor() {
+    window.scrollTo(0, 0);
+  }
   public article: ArticleOverview = Articles[0];
 }
