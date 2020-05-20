@@ -1,0 +1,29 @@
+<div class="widget">
+  <h5 class="widget_title">Subscribe Newsletter</h5>
+  <p>
+    Subscribe to get the latest news and goodies delivered directly to your
+    inbox
+  </p>
+
+  <form [formGroup]="subscribeForm" (submit)="addSubscriber()">
+    <div class="form-group input-group-md">
+      <input
+        class="form-control "
+        formControlName="email"
+        type="email"
+        name="EMAIL"
+        id="mce-EMAIL"
+        placeholder="Email address"
+      />
+    </div>
+    <button
+      class="btn btn-default btn-sm"
+      type="submit"
+      [disabled]="subscribeForm.invalid"
+      class="btn btn-default btn-block"
+      (click)="addSubscriber()"
+    >
+      Subscribe
+    </button>
+  </form>
+</div>

@@ -1,0 +1,11 @@
+<div class="container-youtube">
+  <youtube-player
+    [videoId]="id"
+    (ready)="savePlayer($event)"
+    (change)="onStateChange($event)"
+    [width]="windowContainer.width"
+    [height]="windowContainer.height"
+    [playerVars]="playerVars"
+  >
+  </youtube-player>
+</div>

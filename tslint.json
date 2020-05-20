@@ -19,13 +19,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "candy",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "candy",
       "kebab-case"
     ],
     "eofline": true,
@@ -44,6 +44,7 @@
       true,
       140
     ],
+    "member-access": [true, "check-accessor"],
     "member-ordering": [
       true,
       {
@@ -72,6 +73,8 @@
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
     "no-var-requires": false,
+    "no-unused-expression": true,
+    "no-unused-variable": true,
     "object-literal-key-quotes": [
       true,
       "as-needed"
@@ -94,6 +97,7 @@
         "named": "never"
       }
     },
+    
     "typedef-whitespace": {
       "options": [
         {
