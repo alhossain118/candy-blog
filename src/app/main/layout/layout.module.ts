@@ -16,12 +16,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
-// import { BlogModule } from '../blog/blog.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    // BlogModule,
     LayoutRoutingModule,
     CoreModule,
     FormsModule,
@@ -32,12 +30,8 @@ import { LayoutComponent } from './layout.component';
     LayoutComponent,
     HeaderComponent,
     FooterComponent,
-    // HomeComponent,
     SubscribeEmailComponent,
     AboutMeComponent,
-    // ArticleOverviewComponent,
-    // BlogPageOneComponent,
-    // BlogPageTwoComponent,
     YoutubePlayerComponent,
   ],
 })
