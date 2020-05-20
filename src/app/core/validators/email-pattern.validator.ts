@@ -1,4 +1,4 @@
-import { AbstractControl, ValidationErrors, ValidatorFn } from "@angular/forms";
+import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 
 export function emailValidator(): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
@@ -8,7 +8,7 @@ export function emailValidator(): ValidatorFn {
         return null;
       }
       return {
-        email: "Email Regex Failed",
+        email: 'Email Regex Failed',
       };
     }
     return null;

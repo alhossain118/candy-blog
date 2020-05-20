@@ -1,12 +1,12 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: "candy-youtube-player",
-  templateUrl: "./youtube-player.component.html",
-  styleUrls: ["./youtube-player.component.scss"],
+  selector: 'candy-youtube-player',
+  templateUrl: './youtube-player.component.html',
+  styleUrls: ['./youtube-player.component.scss'],
 })
 export class YoutubePlayerComponent {
-  @Input() public id = "LvDYgSWT8F0";
+  @Input() public id = 'LvDYgSWT8F0';
 
   public get windowContainer() {
     if (window.innerWidth < 400) {
@@ -23,7 +23,7 @@ export class YoutubePlayerComponent {
   }
 
   public playerVars = {
-    cc_lang_pref: "en",
+    cc_lang_pref: 'en',
   };
   private player;
   // @ts-ignore
