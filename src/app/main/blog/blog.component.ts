@@ -6,8 +6,5 @@ import { ArticleOverview, Articles } from './article-data/article-data';
   styleUrls: ['./blog.component.scss'],
 })
 export class BlogComponent {
-  constructor() {
-    console.log('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
-  }
   public articles: ArticleOverview[] = Articles;
 }

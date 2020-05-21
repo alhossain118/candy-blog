@@ -20,12 +20,7 @@ import { BlogPageTwoComponent } from './pages/page-two/page-two.component';
     BlogPageOneComponent,
     BlogPageTwoComponent,
     ArticleOverviewComponent,
-
     // YoutubePlayerComponent,
   ],
 })
-export class BlogModule {
-  constructor() {
-    console.log('blog module loaded');
-  }
-}
+export class BlogModule {}

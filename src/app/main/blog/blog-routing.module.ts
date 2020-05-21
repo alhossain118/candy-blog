@@ -8,7 +8,6 @@ const routes: Routes = [
   {
     path: '',
     component: BlogComponent,
-    // children: [
   },
   {
     path: 'my-journey-into-sour-strips',
