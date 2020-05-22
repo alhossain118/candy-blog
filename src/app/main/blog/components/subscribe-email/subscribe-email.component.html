@@ -12,14 +12,15 @@
         formControlName="email"
         type="email"
         name="EMAIL"
+        (change)="emailValueChanged()"
         id="mce-EMAIL"
         placeholder="Email address"
       />
+      <p class="validationError" *ngIf="formError">*Please enter a valid email</p>
     </div>
     <button
       class="btn btn-default btn-sm"
       type="submit"
-      [disabled]="subscribeForm.invalid"
       class="btn btn-default btn-block"
       (click)="addSubscriber()"
     >

@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from '@app/core/services/email.service';
-import { emailValidator } from '@app/core/validators/email-pattern.validator';
+import {
+  emailTest,
+  emailValidator,
+} from '@app/core/validators/email-pattern.validator';
 import swal from 'sweetalert2';
 @Component({
   selector: 'candy-subscribe-email',
@@ -10,7 +13,7 @@ import swal from 'sweetalert2';
 })
 export class SubscribeEmailComponent {
   constructor(private emailService: EmailService) {}
-
+  public formError = false;
   public closeResult = '';
 
   public subscribeForm = new FormGroup({
@@ -21,9 +24,17 @@ export class SubscribeEmailComponent {
     ]),
   });
 
+  public emailValueChanged() {
+    if (emailTest(this.subscribeForm.get('email').value)) {
+      this.formError = false;
+    } else {
+      this.formError = true;
+    }
+  }
+
   public addSubscriber(): void {
-    console.log(this.subscribeForm);
     if (this.subscribeForm.invalid) {
+      this.formError = true;
       return;
     }
 
