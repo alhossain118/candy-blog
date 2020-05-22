@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { ArticleOverview, Articles } from '../../article-data/article-data';
 @Component({
-  selector: 'candy-page-one',
-  templateUrl: './page-one.component.html',
-  styleUrls: ['./page-one.component.scss'],
+  selector: 'candy-sour-strips-discovery',
+  templateUrl: './sour-strips-discovery.component.html',
+  styleUrls: ['./sour-strips-discovery.component.scss'],
 })
-export class BlogPageOneComponent {
+export class SourStripsDiscoveryComponent {
   constructor() {
     window.scrollTo(0, 0);
   }
