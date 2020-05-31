@@ -1,171 +1,57 @@
 <div *ngIf="article">
-    <div class="blog_post">
-      <div class="blog_content">
-        <div class="blog_text">
-          <h2 class="blog_heading">
-            {{ article.header }}
-          </h2>
-          <ul class="blog_meta">
-            <li>
-              <i class="fas fa-calendar"></i>
-              <span>{{ article.date }}</span>
-            </li>
-          </ul>
-          <!-- START TRANDING POST -->
-<div class="section tranding_post pb_70">
-	<div class="container">
-    	<!-- <div class="row">
-        	<div class="col-md-12">
-            	<div class="heading_s2">
-                	<h4>Tranding Post</h4>
-                </div>
-            </div>
-        </div> -->
-        <div class="row">
-        	<div class="col-lg-6 col-sm-6">
-            	<div class="blog_post blog_grid_overlay">
-                    <div class="blog_img">
-                        <a href="#">
-                            <img src="assets/photoshop/top-25/mars-chocolate.jpg" alt="tranding_post_img">
-                        </a>
-                    </div>
-                    <div class="blog_content">
-                        <div class="blog_text">
-                            <h5 class="blog_heading"><a href="#">1) Mars Wrigley Confectionery, div. of Mars Inc. </a></h5>
-                            <!-- <ul class="blog_meta"> -->
-                                <div class="align-info">
-                                    <span class="location">Location: Chicago, Ill., USA</span>
-                                    <button class="btn btn-default btn-sm">More Info</button>
-                                </div>
-                                <!-- <li><a href="#"><i class="ti-comments"></i> <span>2 Comments</span></a></li> -->
-                            <!-- </ul> -->
+  <div class="blog_post">
+    <div class="blog_content">
+      <div class="blog_text">
+        <h2 class="blog_heading">
+          {{ article.header }}
+        </h2>
+        <ul class="blog_meta">
+          <li>
+            <i class="fas fa-calendar"></i>
+            <span>{{ article.date }}</span>
+          </li>
+        </ul>
+        <!-- START TRANDING POST -->
+        <div class="section tranding_post pb_70">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-lg-6 col-sm-6"
+                *ngFor="let company of companies; index as i"
+              >
+                <div class="blog_post blog_grid_overlay">
+                  <div class="blog_img">
+                    <a href="#">
+                      <img [src]="company.image" alt="tranding_post_img" />
+                    </a>
+                  </div>
+                  <div class="blog_content">
+                    <div class="blog_text">
+                      <h5 class="blog_heading">
+                        <a href="#">{{ i + 1 }}) {{ company.name }}</a>
+                      </h5>
+                      <div class="align-info">
+                        <div>
+                          <span class="location"
+                            >Location: {{ company.location }}</span
+                          >
+                          <br />
+                          <span class="location"
+                            >Net Sales: {{ company.netSales }}</span
+                          >
                         </div>
+                        <button class="btn btn-default btn-sm">
+                          More Info
+                        </button>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col-lg-6 col-sm-6">
-            	<div class="blog_post blog_grid_overlay">
-                    <div class="blog_img">
-                        <a href="#">
-                            <img src="assets/images/tranding_post_img2.jpg" alt="tranding_post_img">
-                        </a>
-                    </div>
-                    <div class="blog_content">
-                        <div class="blog_text">
-                            <h5 class="blog_heading"><a href="#">Who Has Any Right To Find Fault With A Man</a></h5>
-                            <ul class="blog_meta">
-                                <li><a href="#"><i class="ti-calendar"></i> <span>April 14, 2018</span></a></li>
-                                <li><a href="#"><i class="ti-comments"></i> <span>2 Comments</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-6">
-            	<div class="blog_post blog_grid_overlay">
-                    <div class="blog_img">
-                        <a href="#">
-                            <img src="assets/images/tranding_post_img3.jpg" alt="tranding_post_img">
-                        </a>
-                    </div>
-                    <div class="blog_content">
-                        <div class="blog_text">
-                            <h5 class="blog_heading"><a href="#">Who Choose To Enjoy A Pleasure</a></h5>
-                            <ul class="blog_meta">
-                                <li><a href="#"><i class="ti-calendar"></i> <span>April 14, 2018</span></a></li>
-                                <li><a href="#"><i class="ti-comments"></i> <span>2 Comments</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-6">
-            	<div class="blog_post blog_grid_overlay">
-                    <div class="blog_img">
-                        <a href="#">
-                            <img src="assets/images/tranding_post_img4.jpg" alt="tranding_post_img">
-                        </a>
-                    </div>
-                    <div class="blog_content">
-                        <div class="blog_text">
-                            <h5 class="blog_heading"><a href="#">Who Are So Beguiled And Demoralized</a></h5>
-                            <ul class="blog_meta">
-                                <li><a href="#"><i class="ti-calendar"></i> <span>April 14, 2018</span></a></li>
-                                <li><a href="#"><i class="ti-comments"></i> <span>2 Comments</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-6">
-            	<div class="blog_post blog_grid_overlay">
-                    <div class="blog_img">
-                        <a href="#">
-                            <img src="assets/images/tranding_post_img5.jpg" alt="tranding_post_img">
-                        </a>
-                    </div>
-                    <div class="blog_content">
-                        <div class="blog_text">
-                            <h5 class="blog_heading"><a href="#">Perfectly Simple And Easy To Distinguish</a></h5>
-                            <ul class="blog_meta">
-                                <li><a href="#"><i class="ti-calendar"></i> <span>April 14, 2018</span></a></li>
-                                <li><a href="#"><i class="ti-comments"></i> <span>2 Comments</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-6">
-            	<div class="blog_post blog_grid_overlay">
-                    <div class="blog_img">
-                        <a href="#">
-                            <img src="assets/images/tranding_post_img6.jpg" alt="tranding_post_img">
-                        </a>
-                    </div>
-                    <div class="blog_content">
-                        <div class="blog_text">
-                            <h5 class="blog_heading"><a href="#">Except To Obtain Some Advantage</a></h5>
-                            <ul class="blog_meta">
-                                <li><a href="#"><i class="ti-calendar"></i> <span>April 14, 2018</span></a></li>
-                                <li><a href="#"><i class="ti-comments"></i> <span>2 Comments</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END TRANDING POST -->
-          <!-- <div class="topic-section">
-            <p>
-              {{ article.description }} I had first heard about sour strips from
-              my brother when he was on his way to Houston to workout at the
-              Alphalete gym. He had called me to let me know that the gym had some
-              sour candy in stock and it was supposedly what people were calling
-              "The best candy they've ever had". I checked online and it was
-              already sold out online and would take a while before they
-              restocked, so on a whim, I told me to get $20 worth of the candy.
-            </p>
-  
-            <img
-              class="generic-img"
-              src="assets\imgs\candy\sour-candy.jfif"
-              alt=""
-            />
-  
-            <p>
-              I've always loved sour candy, ex: sour Sweettarts, sour straws,
-              Warheads and others. And then there are some candy companies that
-              don't seem to know the definition of sour. It's like they just put
-              the word "Sour", in big bold packaging, just because the package
-              printing ink is cheap or something.
-            </p>
-          </div> -->
-
-  
+          </div>
         </div>
       </div>
     </div>
   </div>
-  
+</div>
