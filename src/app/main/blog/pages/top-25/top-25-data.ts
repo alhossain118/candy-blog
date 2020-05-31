@@ -77,7 +77,7 @@ export const Companies: Company[] = [
   {
     name: 'Orion Corp.',
     location: 'Seoul, Korea',
-    image: 'assets/photoshop/top-25/glico.jpg',
+    image: 'assets/images/tranding_post_img1.jpg',
   },
   {
     name: 'August Storck KG',
@@ -92,12 +92,12 @@ export const Companies: Company[] = [
   {
     name: 'Bourbon Corp.',
     location: 'Niigata, Japan',
-    image: 'assets/photoshop/top-25/glico.jpg',
+    image: 'assets/images/tranding_post_img1.jpg',
   },
   {
     name: 'United Confectionary Manufacturers',
     location: 'Moscow, Russia',
-    image: 'assets/photoshop/top-25/glico.jpg',
+    image: 'assets/images/tranding_post_img1.jpg',
   },
   {
     name: 'Chocolat Frey AB',
