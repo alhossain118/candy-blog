@@ -6,7 +6,6 @@ export interface Company {
 }
 
 export const Companies: Company[] = [
-    // Count 1
   {
     name: 'Mars Wrigley Confectionery',
     location: 'Chicago, Ill., USA',
@@ -53,7 +52,6 @@ export const Companies: Company[] = [
     location: 'Bonn, Germany',
     image: 'assets/photoshop/top-25/haribo.jpg',
   },
-  // Count 10
   {
     name: 'Ezaki Glico Co. Ltd.',
     location: 'Osaka, Japan',

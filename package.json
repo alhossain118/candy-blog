@@ -25,6 +25,7 @@
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@ng-bootstrap/ng-bootstrap": "^6.0.3",
     "bootstrap": "^4.4.1",
+    "ngx-pagination": "^5.0.0",
     "ngx-youtube-player": "^7.1.5",
     "rxjs": "~6.5.4",
     "sweetalert2": "^9.10.12",

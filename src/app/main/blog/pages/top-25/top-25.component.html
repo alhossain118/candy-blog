@@ -17,10 +17,15 @@
             <div class="row">
               <div
                 class="col-lg-6 col-sm-6"
-                *ngFor="let company of companies; index as i"
+                *ngFor="
+                  let company of companies
+                    | paginate: { itemsPerPage: 10, currentPage: p };
+                  index as i
+                "
               >
                 <div class="blog_post blog_grid_overlay">
-                  <div class="blog_img">
+                  <!-- transition blog image .blog_img -->
+                  <div>
                     <a href="#">
                       <img [src]="company.image" alt="tranding_post_img" />
                     </a>
@@ -53,5 +58,11 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="flex-container">
+    <pagination-controls
+      class="my-pagination"
+      (pageChange)="pageChangeEvent($event)"
+    ></pagination-controls>
   </div>
 </div>

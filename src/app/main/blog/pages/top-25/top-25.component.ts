@@ -12,4 +12,10 @@ export class Top25Component {
   }
   public article: ArticleOverview = Articles[0];
   public companies: Company[] = Companies;
+  public p = 1;
+
+  public pageChangeEvent(e: any): void {
+    window.scrollTo(0, 0);
+    this.p = e;
+  }
 }

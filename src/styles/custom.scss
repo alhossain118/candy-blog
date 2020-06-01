@@ -1,0 +1,9 @@
+.my-pagination .ngx-pagination {
+  li.current {
+    background-color: #ff324d;
+  }
+
+  .disabled {
+    display: none;
+  }
+}
