@@ -1,11 +1,23 @@
-p {
+.company-data {
+  p {
     font-size: 14px;
     font-weight: 600;
     color: black;
     margin-bottom: 1px;
+  }
 }
 
 .align-img {
-    display: flex;
-    align-self: center;
+  display: flex;
+  align-self: center;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.box > * {
+  flex: 1 1 160px;
 }
