@@ -11,11 +11,17 @@ import { Companies, Company } from './top-25-data';
 export class Top25Component {
   constructor(private router: Router) {}
 
-  public article: ArticleOverview = Articles[0];
   public companies: Company[] = Companies;
   public p = 1;
 
+  public get article(): ArticleOverview {
+    return Articles.find((article: ArticleOverview) => {
+      return article.header === 'Top 25 Candy Companies in 2020';
+    });
+  }
+
   public pageChangeEvent(e: any): void {
+    window.scrollTo(0, 0);
     this.p = e;
   }
   public routeToCompany(name: string): void {

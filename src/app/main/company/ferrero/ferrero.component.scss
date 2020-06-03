@@ -1,7 +1,10 @@
-  .box {
+.brand-line {
+    font-weight: 600;
+}
+.box {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   
   @media only screen and (max-width: 767px) {
@@ -16,6 +19,3 @@
       }
   }
   
-  .candy-name {
-      font-weight: 600;
-  }

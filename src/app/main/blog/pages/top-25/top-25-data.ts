@@ -25,7 +25,13 @@ export const Companies: Company[] = [
   {
     name: 'Ferrero Group',
     location: 'Luxembourg, Italy',
-    image: 'assets/photoshop/top-25/ferrero-2.jpg',
+    image: 'assets/photoshop/top-25/ferrero.jpg',
+    companyPageImg: 'assets/photoshop/company/ferrero.jpg',
+    website: 'https://www.ferrero.com',
+    netSales: '13 Billion',
+    cheifOfficer: 'Giovanni Ferrero(CEO)',
+    numberOfEmployees: '35,146',
+    numberOfFactories: '25'
   },
   {
     name: 'Mondelez International',
