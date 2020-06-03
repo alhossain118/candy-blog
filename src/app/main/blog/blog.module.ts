@@ -7,6 +7,7 @@ import { BlogRoutingModule } from './blog-routing.module';
 import { BlogComponent } from './blog.component';
 import { SourStripsDiscoveryComponent } from './pages/sour-strips-discovery/sour-strips-discovery.component';
 import { Top25Component } from './pages/top-25/top-25.component';
+import { MarsComponent } from '../company/mars/mars.component';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { Top25Component } from './pages/top-25/top-25.component';
     Top25Component,
     ArticleOverviewComponent,
     CompanyComponent,
+    MarsComponent
     // YoutubePlayerComponent,
   ],
 })

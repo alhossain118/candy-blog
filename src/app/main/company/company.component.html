@@ -1,238 +1,30 @@
-<br />
-<div class="row">
-  <div class="col-lg-4 align-img">
-    <img src="assets/photoshop/company/mars.jpg" alt="" />
-  </div>
-  <div class="col-lg-8">
-    <br />
-    <div class="company-data">
-      <h2>Mars Wrigley Confectionery</h2>
-      <p>
-        Website:
-        <a href="https://www.mars.com/made-by-mars/mars-wrigley" target="_blank"
-          >https://www.mars.com/made-by-mars/mars-wrigley</a
-        >
-      </p>
-      <p>Location: Chicago, Ill., USA</p>
-      <p>Net Sales: 18 Billion</p>
-      <p>Cheif Officer: Andrew Clarke(Pres. of Mars Wrigley Confectionery)</p>
-      <p>Number of Employees: 34,000</p>
-      <p>Number of Factories: N/A</p>
+<div *ngIf="company">
+  <br />
+  <div class="row">
+    <div class="col-lg-4 align-img">
+      <img [src]="company.companyPageImg" alt="" />
+    </div>
+    <div class="col-lg-8">
+      <br />
+      <div class="company-data">
+        <h2>{{ company.name }}</h2>
+        <p>
+          Website:
+          <a [href]="company.website" target="_blank">{{ company.website }}</a>
+        </p>
+        <p>Location: {{ company.location }}</p>
+        <p>Net Sales: {{ company.netSales }}</p>
+        <p>Cheif Officer: {{ company.cheifOfficer }}</p>
+        <p>Number of Employees: {{ company.numberOfEmployees }}</p>
+        <p>Number of Factories: {{ company.numberOfFactories }}</p>
+      </div>
     </div>
   </div>
-</div>
-<hr />
+  <hr />
 
-<h4>Information</h4>
-<br />
-<p class="company-information">
-  Mars Wrigley Confectionery is a division of Mars Inc. Many of their most
-  popular products include M&M’S®, SNICKERS®, ORBIT®, EXTRA® and Skittles®,
-  which are enjoyed in over 180 countries.
-</p>
-
-<p>Some of these products include product lines manufactured by Mars.</p>
-
-<div class="box">
-  <div>
-    3 Musketeers
-  </div>
-
-  <div>
-    Bounty
-  </div>
-
-  <div>
-    Celebrations
-  </div>
-
-  <div>
-    Cirku
-  </div>
-
-  <div>
-    CocoaVia
-  </div>
-
-  <div>
-    Combos
-  </div>
-
-  <div>
-    Dolmio
-  </div>
-
-  <div>
-    Dove
-  </div>
-
-  <div>
-    Ebly
-  </div>
-
-  <div>
-    Ethel M
-  </div>
-
-  <div>
-    FLAVIA
-  </div>
-
-  <div>
-    Fdivng
-  </div>
-
-  <div>
-    Flyte
-  </div>
-
-  <div>
-    Galaxy
-  </div>
-
-  <div>
-    Galaxy Bubbles
-  </div>
-
-  <div>
-    Galaxy Minstrels
-  </div>
-
-  <div>
-    goodnessKNOWS
-  </div>
-
-  <div>
-    Kudos
-  </div>
-
-  <div>
-    M-Azing
-  </div>
-  <div>
-    M&M's
-  </div>
-  <div>
-    Maltesers
-  </div>
-  <div>
-    Marathon
-  </div>
-  <div>
-    Mars
-  </div>
-  <div>
-    Masterfoods
-  </div>
-  <div>
-    Milky Way
-  </div>
-  <div>
-    Munch
-  </div>
-  <div>
-    Promite
-  </div>
-
-  <div>
-    Revels
-  </div>
-  <div>
-    Snickers
-  </div>
-  <div>
-    Topic
-  </div>
-  <div>
-    Tracker
-  </div>
-  <div>
-    Treets
-  </div>
-  <div>
-    Twix
-  </div>
-</div>
-
-<p>Other products include those manufactured by the Wrigley Company</p>
-
-<div class="box">
-  <div>
-    5 (gum)
-  </div>
-  <div>
-    Airwaves
-  </div>
-  <div>
-    Alpine
-  </div>
-  <div>
-    Altoids
-  </div>
-  <div>
-    Big Red
-  </div>
-  <div>
-    Bubble Tape
-  </div>
-  <div>
-    Doublemint
-  </div>
-  <div>
-    Eclipse
-  </div>
-  <div>
-    Eclipse Ice
-  </div>
-  <div>
-    Excel
-  </div>
-  <div>
-    Extra
-  </div>
-  <div>
-    Freedent
-  </div>
-  <div>
-    Hubba Bubba
-  </div>
-  <div>
-    Juicy Fruit
-  </div>
-  <div>
-    Life Savers
-  </div>
-  <div>
-    Lockets
-  </div>
-  <div>
-    Orbit
-  </div>
-  <div>
-    Ouch!
-  </div>
-  <div>
-    Skittles
-  </div>
-  <div>
-    Spearmint
-  </div>
-  <div>
-    Starburst
-  </div>
-  <div>
-    Surpass
-  </div>
-  <div>
-    Rondo
-  </div>
-  <div>
-    Tunes
-  </div>
-  <div>
-    Wrigley's
-  </div>
-  <div>
-    Winterfresh
-  </div>
+  <h4>Information</h4>
+  <br />
+  <ng-container [ngSwitch]="company.name">
+    <candy-mars *ngSwitchCase="'Mars Wrigley Confectionery'"></candy-mars>
+  </ng-container>
 </div>

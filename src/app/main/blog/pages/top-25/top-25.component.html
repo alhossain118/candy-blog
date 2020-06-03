@@ -26,14 +26,14 @@
                 <div class="blog_post blog_grid_overlay">
                   <!-- transition blog image .blog_img -->
                   <div>
-                    <a href="#">
+                    <a (click)="routeToCompany(company.name)">
                       <img [src]="company.image" alt="tranding_post_img" />
                     </a>
                   </div>
                   <div class="blog_content">
                     <div class="blog_text">
                       <h5 class="blog_heading">
-                        <a href="#">{{ i + 1 }}) {{ company.name }}</a>
+                        <a (click)="routeToCompany(company.name)">{{ i + 1 }}) {{ company.name }}</a>
                       </h5>
                       <div class="align-info">
                         <div>
@@ -45,7 +45,7 @@
                             >Net Sales: {{ company.netSales }}</span
                           >
                         </div>
-                        <button class="btn btn-default btn-sm" [routerLink]="['/', 'company']">
+                        <button class="btn btn-default btn-sm" type="button" (click)="routeToCompany(company.name)">
                           More Info
                         </button>
                       </div>
