@@ -7,12 +7,10 @@ import { Companies, Company } from '../blog/pages/top-25/top-25-data';
   styleUrls: ['./company.component.scss'],
 })
 export class CompanyComponent implements OnInit {
+  constructor(private route: ActivatedRoute) {}
+
   public url: string;
   public company: Company;
-
-  constructor(private route: ActivatedRoute) {
-    window.scrollTo(0, 0);
-  }
 
   public ngOnInit(): void {
     this.route.params.subscribe((res: any) => {

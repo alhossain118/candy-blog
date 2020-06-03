@@ -5,8 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './mars.component.html',
   styleUrls: ['./mars.component.scss'],
 })
-export class MarsComponent {
-  constructor() {
-    window.scrollTo(0, 0);
-  }
-}
+export class MarsComponent {}

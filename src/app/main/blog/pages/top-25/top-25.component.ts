@@ -9,15 +9,13 @@ import { Companies, Company } from './top-25-data';
   styleUrls: ['./top-25.component.scss'],
 })
 export class Top25Component {
-  constructor(private router: Router) {
-    window.scrollTo(0, 0);
-  }
+  constructor(private router: Router) {}
+
   public article: ArticleOverview = Articles[0];
   public companies: Company[] = Companies;
   public p = 1;
 
   public pageChangeEvent(e: any): void {
-    window.scrollTo(0, 0);
     this.p = e;
   }
   public routeToCompany(name: string): void {
