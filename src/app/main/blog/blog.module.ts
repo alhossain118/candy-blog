@@ -1,15 +1,19 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
 import { ArticleOverviewComponent } from '../blog/components/article-overview/article-overview.component';
+import { CompanyComponent } from '../company/company.component';
 import { BlogRoutingModule } from './blog-routing.module';
 import { BlogComponent } from './blog.component';
-import { BlogPageOneComponent } from './pages/page-one/page-one.component';
-import { BlogPageTwoComponent } from './pages/page-two/page-two.component';
+import { SourStripsDiscoveryComponent } from './pages/sour-strips-discovery/sour-strips-discovery.component';
+import { Top25Component } from './pages/top-25/top-25.component';
+import { MarsComponent } from '../company/mars/mars.component';
 
 @NgModule({
   imports: [
-    BlogRoutingModule,
     CommonModule,
+    BlogRoutingModule,
+    NgxPaginationModule,
     // CoreModule,
     // FormsModule,
     // ReactiveFormsModule,
@@ -17,15 +21,12 @@ import { BlogPageTwoComponent } from './pages/page-two/page-two.component';
   ],
   declarations: [
     BlogComponent,
-    BlogPageOneComponent,
-    BlogPageTwoComponent,
+    SourStripsDiscoveryComponent,
+    Top25Component,
     ArticleOverviewComponent,
-
+    CompanyComponent,
+    MarsComponent
     // YoutubePlayerComponent,
   ],
 })
-export class BlogModule {
-  constructor() {
-    console.log('blog module loaded');
-  }
-}
+export class BlogModule {}

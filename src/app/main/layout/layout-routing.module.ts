@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-// import { HomeComponent } from "../home/home.component";
-// import { BlogPageOneComponent } from "../pages/page-one/page-one.component";
-// import { BlogPageTwoComponent } from "../pages/page-two/page-two.component";
 import { LayoutComponent } from './layout.component';
-// import { BlogComponent } from '../blog/blog.component';
+import { CompanyComponent } from '../company/company.component';
 
 const routes: Routes = [
   {
@@ -21,14 +18,10 @@ const routes: Routes = [
           import('../blog/blog.module').then((m) => m.BlogModule),
         // component: BlogComponent,
       },
-      // {
-      //   path: "my-journey-into-sour-strips",
-      //   component: BlogPageOneComponent,
-      // },
-      // {
-      //   path: "candy-for-a-keto-diet",
-      //   component: BlogPageTwoComponent,
-      // },
+      {
+        path: 'company/:id',
+        component: CompanyComponent,
+      },
     ],
   },
 ];

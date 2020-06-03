@@ -1,0 +1,30 @@
+<div *ngIf="company">
+  <br />
+  <div class="row">
+    <div class="col-lg-4 align-img">
+      <img [src]="company.companyPageImg" alt="" />
+    </div>
+    <div class="col-lg-8">
+      <br />
+      <div class="company-data">
+        <h2>{{ company.name }}</h2>
+        <p>
+          Website:
+          <a [href]="company.website" target="_blank">{{ company.website }}</a>
+        </p>
+        <p>Location: {{ company.location }}</p>
+        <p>Net Sales: {{ company.netSales }}</p>
+        <p>Cheif Officer: {{ company.cheifOfficer }}</p>
+        <p>Number of Employees: {{ company.numberOfEmployees }}</p>
+        <p>Number of Factories: {{ company.numberOfFactories }}</p>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+  <h4>Information</h4>
+  <br />
+  <ng-container [ngSwitch]="company.name">
+    <candy-mars *ngSwitchCase="'Mars Wrigley Confectionery'"></candy-mars>
+  </ng-container>
+</div>

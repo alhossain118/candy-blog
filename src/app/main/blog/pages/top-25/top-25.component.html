@@ -1,0 +1,68 @@
+<div *ngIf="article">
+  <div class="blog_post">
+    <div class="blog_content">
+      <div class="blog_text">
+        <h2 class="blog_heading">
+          {{ article.header }}
+        </h2>
+        <ul class="blog_meta">
+          <li>
+            <i class="fas fa-calendar"></i>
+            <span>{{ article.date }}</span>
+          </li>
+        </ul>
+        <!-- START TRANDING POST -->
+        <div class="section tranding_post pb_70">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-lg-6 col-sm-6"
+                *ngFor="
+                  let company of companies
+                    | paginate: { itemsPerPage: 10, currentPage: p };
+                  index as i
+                "
+              >
+                <div class="blog_post blog_grid_overlay">
+                  <!-- transition blog image .blog_img -->
+                  <div>
+                    <a (click)="routeToCompany(company.name)">
+                      <img [src]="company.image" alt="tranding_post_img" />
+                    </a>
+                  </div>
+                  <div class="blog_content">
+                    <div class="blog_text">
+                      <h5 class="blog_heading">
+                        <a (click)="routeToCompany(company.name)">{{ i + 1 }}) {{ company.name }}</a>
+                      </h5>
+                      <div class="align-info">
+                        <div>
+                          <span class="location"
+                            >Location: {{ company.location }}</span
+                          >
+                          <br />
+                          <span class="location"
+                            >Net Sales: {{ company.netSales }}</span
+                          >
+                        </div>
+                        <button class="btn btn-default btn-sm" type="button" (click)="routeToCompany(company.name)">
+                          More Info
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-container">
+    <pagination-controls
+      class="my-pagination"
+      (pageChange)="pageChangeEvent($event)"
+    ></pagination-controls>
+  </div>
+</div>
