@@ -4,14 +4,15 @@ import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
 import { ArticleOverviewComponent } from '../blog/components/article-overview/article-overview.component';
 import { CompanyComponent } from '../company/company.component';
 import { FerreroComponent } from '../company/ferrero/ferrero.component';
+import { HersheysComponent } from '../company/hersheys/hersheys.component';
 import { MarsComponent } from '../company/mars/mars.component';
+import { MeijiComponent } from '../company/meiji/meiji.component';
+import { MondelezComponent } from '../company/mondelez/mondelez.component';
+import { NestleComponent } from '../company/nestle/nestle.component';
 import { BlogRoutingModule } from './blog-routing.module';
 import { BlogComponent } from './blog.component';
 import { SourStripsDiscoveryComponent } from './pages/sour-strips-discovery/sour-strips-discovery.component';
 import { Top25Component } from './pages/top-25/top-25.component';
-import { MondelezComponent } from '../company/mondelez/mondelez.component';
-import { MeijiComponent } from '../company/meiji/meiji.component';
-import { HersheysComponent } from '../company/hersheys/hersheys.component';
 
 @NgModule({
   imports: [
@@ -33,7 +34,8 @@ import { HersheysComponent } from '../company/hersheys/hersheys.component';
     FerreroComponent,
     MondelezComponent,
     MeijiComponent,
-    HersheysComponent
+    HersheysComponent,
+    NestleComponent,
     // YoutubePlayerComponent,
   ],
 })

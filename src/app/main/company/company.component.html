@@ -13,7 +13,7 @@
           <a [href]="company.website" target="_blank">{{ company.website }}</a>
         </p>
         <p>Location: {{ company.location }}</p>
-        <p>Net Sales: {{ company.netSales }}</p>
+        <p>Net Sales: ${{ company.netSales }}</p>
         <p>Cheif Officer: {{ company.cheifOfficer }}</p>
         <p>Number of Employees: {{ company.numberOfEmployees }}</p>
         <p>Number of Factories: {{ company.numberOfFactories }}</p>
@@ -30,5 +30,6 @@
     <candy-mondelez *ngSwitchCase="'Mondelez International'"></candy-mondelez>
     <candy-meiji *ngSwitchCase="'Meiji Co. Ltd.'"></candy-meiji>
     <candy-hersheys *ngSwitchCase="'Hershey Co.'"></candy-hersheys>
+    <candy-nestle *ngSwitchCase="'Nestle SA'"></candy-nestle>
   </ng-container>
 </div>

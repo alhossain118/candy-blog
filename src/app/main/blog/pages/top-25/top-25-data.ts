@@ -77,13 +77,19 @@ export const Companies: Company[] = [
     numberOfFactories: '17',
     infoAvailable: true,
     verified: false,
-
   },
   {
     name: 'Nestle SA',
     location: 'Vevey, Switzerland',
     image: 'assets/photoshop/top-25/nestle.jpg',
+    website: 'https://www.nestle.com',
     companyPageImg: 'assets/photoshop/company/nestle.jpg',
+    cheifOfficer: 'Ulf Mark Schneider(CEO)',
+    netSales: '93.4 billion',
+    numberOfEmployees: '352,000(2019)',
+    numberOfFactories: '79',
+    infoAvailable: true,
+    verified: false,
   },
   {
     name: 'Chocoladefabriken Lindt & Sprungli AG',
