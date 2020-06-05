@@ -15,15 +15,15 @@ export const Articles: ArticleOverview[] = [
     have alternatives that will work!`,
     image: 'assets/photoshop/lots-of-candy.jpg',
     header: 'Top 25 Candy Companies in 2020',
-    link: 'candy-for-a-keto-diet',
+    link: 'top-25-candy-companies',
   },
   {
     date: 'April 14, 2018',
     description: `A new sold out sour candy? Whattt?
-    Could there really be sour candy that actually delivers?
-    Or is it just is over-hyped?`,
+                      Could there really be sour candy that actually delivers?
+                      Or is it just is over-hyped?`,
     // image: 'assets/images/sour-strips/retail-group-image-update.jpg',
-    image: 'assets/photoshop/lots-of-candy.jpg',
+    image: 'assets/photoshop/sour-strips.jpg',
     header: 'My Journey into Sour Strips',
     link: 'my-journey-into-sour-strips',
   },

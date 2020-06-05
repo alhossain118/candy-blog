@@ -14,7 +14,7 @@ const routes: Routes = [
     component: SourStripsDiscoveryComponent,
   },
   {
-    path: 'candy-for-a-keto-diet',
+    path: 'top-25-candy-companies',
     component: Top25Component,
   }
 ];

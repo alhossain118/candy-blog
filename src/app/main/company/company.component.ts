@@ -16,6 +16,7 @@ export class CompanyComponent implements OnInit {
     this.route.params.subscribe((res: any) => {
       this.url = res.id;
       const companyName = this.url.toLowerCase().split('-').join(' ');
+      console.log(companyName)
       this.company = Companies.find(
         (company: Company) => company.name.toLowerCase() === companyName
       );

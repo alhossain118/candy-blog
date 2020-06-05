@@ -11,3 +11,9 @@
   display: flex;
   align-self: center;
 }
+
+@media only screen and (max-width: 767px) {
+  .align-img {
+    justify-content: center;
+  }
+}
