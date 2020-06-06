@@ -18,13 +18,13 @@ export const Companies: Company[] = [
     location: 'Chicago, Ill., USA',
     image: 'assets/photoshop/top-25/mars-chocolate.jpg',
     companyPageImg: 'assets/photoshop/company/mars.jpg',
-    netSales: '18 Billion',
+    netSales: '18 Billion(2019)',
     website: 'https://www.mars.com/made-by-mars/mars-wrigley',
     cheifOfficer: 'Andrew Clarke(Pres. of Mars Wrigley Confectionery)',
     numberOfEmployees: '34,000',
     numberOfFactories: 'N/A',
     infoAvailable: true,
-    verified: false,
+    verified: true,
   },
   {
     name: 'Ferrero Group',
@@ -37,7 +37,7 @@ export const Companies: Company[] = [
     numberOfEmployees: '40,000',
     numberOfFactories: '25',
     infoAvailable: true,
-    verified: false,
+    verified: true,
   },
   {
     name: 'Mondelez International',
@@ -46,7 +46,8 @@ export const Companies: Company[] = [
     website: 'https://www.mondelezinternational.com',
     companyPageImg: 'assets/photoshop/company/mondelez.jpg',
     cheifOfficer: 'Dirk Van de Put(CEO)',
-    netSales: '3.4 billion(2018)',
+    // netSales: '3.4 billion(2018)',
+    netSales: '11.8 billion(2019)',
     numberOfEmployees: '83,000 (2018)',
     numberOfFactories: '150',
     infoAvailable: true,
@@ -58,7 +59,7 @@ export const Companies: Company[] = [
     image: 'assets/photoshop/top-25/meiji.jpg',
     website: 'https://www.meiji.com/global',
     companyPageImg: 'assets/photoshop/company/meji.jpg',
-    netSales: '9.7 Billion',
+    netSales: '9.721 Billion',
     cheifOfficer: 'Kazuo Kawamura, (President) ',
     numberOfEmployees: '17,600(2019)',
     numberOfFactories: '7',
@@ -72,7 +73,7 @@ export const Companies: Company[] = [
     website: 'https://www.hersheys.com',
     companyPageImg: 'assets/photoshop/company/hersheys.jpg',
     cheifOfficer: 'Michele Buck(CEO)',
-    netSales: '7.99 Billion',
+    netSales: '7.986 Billion',
     numberOfEmployees: '16,140(2018)',
     numberOfFactories: '17',
     infoAvailable: true,
@@ -85,7 +86,7 @@ export const Companies: Company[] = [
     website: 'https://www.nestle.com',
     companyPageImg: 'assets/photoshop/company/nestle.jpg',
     cheifOfficer: 'Ulf Mark Schneider(CEO)',
-    netSales: '93.4 billion',
+    netSales: '7.925 billion',
     numberOfEmployees: '352,000(2019)',
     numberOfFactories: '79',
     infoAvailable: true,
@@ -96,24 +97,28 @@ export const Companies: Company[] = [
     location: 'Kilchberg, Switzerland',
     image: 'assets/photoshop/top-25/lindt.jpg',
     companyPageImg: 'assets/photoshop/company/lindt.jpg',
+    netSales: '4.574 Billion',
   },
   {
     name: 'pladis',
     location: '	London, UK',
     image: 'assets/photoshop/top-25/pladis.jpg',
     companyPageImg: 'assets/photoshop/company/pladis.jpg',
+    netSales: '4.515 Billion',
   },
   {
     name: 'Haribo GmbH & Co. K.G.',
     location: 'Bonn, Germany',
     image: 'assets/photoshop/top-25/haribo.jpg',
     companyPageImg: 'assets/photoshop/company/haribo.jpg',
+    netSales: '3.3 Billion'
   },
   {
     name: 'Ezaki Glico Co. Ltd.',
     location: 'Osaka, Japan',
     image: 'assets/photoshop/top-25/glico.jpg',
     companyPageImg: 'assets/photoshop/company/glico.jpg',
+    netSales: '3.156 Billion'
   },
   {
     name: 'Perfetti Van Melle',
@@ -203,3 +208,8 @@ export const Companies: Company[] = [
     companyPageImg: 'assets/photoshop/company/clif.jpg',
   },
 ];
+
+const stats = {
+  a:
+    'https://www.statista.com/statistics/252097/net-sales-of-the-leading-10-confectionery-companies-worldwide/',
+};

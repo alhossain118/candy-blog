@@ -6,6 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./youtube-player.component.scss'],
 })
 export class YoutubePlayerComponent {
+  constructor() {
+    console.log('youtube loaded');
+  }
+
   @Input() public id = 'LvDYgSWT8F0';
 
   public get windowContainer() {

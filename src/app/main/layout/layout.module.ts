@@ -18,7 +18,7 @@ import { LayoutComponent } from './layout.component';
     CoreModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxYoutubePlayerModule.forRoot(),
+    // NgxYoutubePlayerModule.forRoot(),
   ],
   declarations: [
     LayoutComponent,
@@ -26,7 +26,7 @@ import { LayoutComponent } from './layout.component';
     FooterComponent,
     SubscribeEmailComponent,
     AboutMeComponent,
-    YoutubePlayerComponent,
+    // YoutubePlayerComponent,
   ],
 })
 export class LayoutModule {}
