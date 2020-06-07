@@ -11,54 +11,85 @@
             <span>{{ article.date }}</span>
           </li>
         </ul>
+        <div class="topic-section">
+          <p>
+            Welcome to my list of the World's Top Candy Companies. The company
+            is ranked based on the annual net sales. I've included more
+            additional info about each company for the first 5. More info for
+            the remaining companies will be added soon.
+          </p>
+        </div>
+
+        <div class="flex-btn-container">
+          <div class="btn-group">
+            <button
+              class="btn btn-sm mr-1 selectedView"
+              id="gridBtn"
+              (click)="changeLayoutView('gridViewSelected')"
+            >
+              Grid
+            </button>
+            <button
+              class="btn btn-sm"
+              id="tableBtn"
+              (click)="changeLayoutView('tableViewSelected')"
+            >
+              Table
+            </button>
+          </div>
+        </div>
+
         <!-- START TRANDING POST -->
-        <div class="section tranding_post pb_70">
-          <div class="container">
-            <div class="row">
-              <div
-                class="col-lg-6 col-sm-6"
-                *ngFor="
-                  let company of companies
-                    | paginate: { itemsPerPage: 6, currentPage: p }
-                "
-              >
-                <div class="blog_post blog_grid_overlay">
-                  <!-- transition blog image .blog_img -->
-                  <div>
-                    <a
-                      class="routerlink"
-                      (click)="routeToCompany(company.name)"
-                    >
-                      <img [src]="company.image" alt="tranding_post_img" />
-                    </a>
-                  </div>
-                  <div class="blog_content">
-                    <div class="blog_text">
-                      <h5 class="blog_heading">
-                        <a
-                          class="routerlink"
-                          (click)="routeToCompany(company.name)"
-                          >{{ company.name }}</a
-                        >
-                      </h5>
-                      <div class="align-info">
-                        <div>
-                          <span class="location"
-                            >Location: {{ company.location }}</span
+
+        <div *ngIf="gridViewSelected">
+          <div class="section tranding_post pb_70">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-lg-6 col-sm-6"
+                  *ngFor="
+                    let company of companies
+                      | paginate: { itemsPerPage: 6, currentPage: p }
+                  "
+                >
+                  <div class="blog_post blog_grid_overlay">
+                    <!-- transition blog image .blog_img -->
+                    <div>
+                      <a
+                        class="routerlink"
+                        (click)="routeToCompany(company.name)"
+                      >
+                        <img [src]="company.image" alt="tranding_post_img" />
+                      </a>
+                    </div>
+                    <div class="blog_content">
+                      <div class="blog_text">
+                        <h5 class="blog_heading">
+                          <a
+                            class="routerlink"
+                            (click)="routeToCompany(company.name)"
+                            >{{ company.name }}</a
                           >
-                          <br />
-                          <span class="location"
-                            >Net Sales: {{ company.netSales }}</span
+                        </h5>
+                        <div class="align-info">
+                          <div>
+                            <span class="location"
+                              >Location: {{ company.location }}</span
+                            >
+                            <br />
+                            <span class="location"
+                              >Net Sales: {{ company.netSales }}</span
+                            >
+                          </div>
+                          <button
+                            *ngIf="company.infoAvailable"
+                            class="btn btn-default btn-sm"
+                            type="button"
+                            (click)="routeToCompany(company.name)"
                           >
+                            More Info
+                          </button>
                         </div>
-                        <button
-                          *ngIf="company.infoAvailable"
-                          class="btn btn-default btn-sm"
-                          type="button"
-                          (click)="routeToCompany(company.name)"
-                        >
-                          More Info
-                        </button>
                       </div>
                     </div>
                   </div>
@@ -70,7 +101,7 @@
       </div>
     </div>
   </div>
-  <div class="flex-container">
+  <div class="flex-container" *ngIf="gridViewSelected">
     <pagination-controls
       class="my-pagination"
       (pageChange)="pageChangeEvent($event)"

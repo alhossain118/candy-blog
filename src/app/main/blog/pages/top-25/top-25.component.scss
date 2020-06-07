@@ -1,6 +1,4 @@
 p {
-    font-size: 16px;
-    max-width: 80%;
     margin: 20px 0;
   }
   
@@ -13,6 +11,20 @@ p {
 
   h5 :hover {
     cursor: pointer;
+  }
+  .flex-btn-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .btn-group {
+    button {
+      border: 1px solid #FF324D;
+    }
+
+    .selectedView {
+      background-color: #FF324D;
+      color: white;
+    }
   }
   
   .topic-section {
