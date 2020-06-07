@@ -13,15 +13,16 @@ export class YoutubePlayerComponent {
   @Input() public id = 'LvDYgSWT8F0';
 
   public get windowContainer() {
+    console.log(window.innerWidth)
     if (window.innerWidth < 400) {
       return {
         height: window.innerWidth - 100,
-        width: window.innerWidth,
+        width: window.innerWidth - 50,
       };
     } else {
       return {
-        height: 400,
-        width: 600,
+        height: 350,
+        width: window.innerWidth * .9,
       };
     }
   }
