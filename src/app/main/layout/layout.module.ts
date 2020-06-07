@@ -1,8 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
-import { YoutubePlayerComponent } from '../../core/components/youtube-player/youtube-player.component';
 import { CoreModule } from '../../core/core.module';
 import { AboutMeComponent } from '../blog/components/about-me/about-me.component';
 import { SubscribeEmailComponent } from '../blog/components/subscribe-email/subscribe-email.component';

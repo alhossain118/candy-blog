@@ -1,0 +1,21 @@
+.brand-line {
+    font-weight: 600;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+      .box > * {
+          flex: 1 1 120px;
+      }
+  }
+  
+  @media only screen and (min-width: 768px) {
+      .box > * {
+          flex: 1 1 160px;
+      }
+  }
+  

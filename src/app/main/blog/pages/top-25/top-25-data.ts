@@ -51,7 +51,7 @@ export const Companies: Company[] = [
     numberOfEmployees: '83,000 (2018)',
     numberOfFactories: '150',
     infoAvailable: true,
-    verified: false,
+    verified: true,
   },
   {
     name: 'Meiji Co. Ltd.',
@@ -64,7 +64,7 @@ export const Companies: Company[] = [
     numberOfEmployees: '17,600(2019)',
     numberOfFactories: '7',
     infoAvailable: true,
-    verified: false,
+    verified: true,
   },
   {
     name: 'Hershey Co.',
@@ -77,7 +77,7 @@ export const Companies: Company[] = [
     numberOfEmployees: '16,140(2018)',
     numberOfFactories: '17',
     infoAvailable: true,
-    verified: false,
+    verified: true,
   },
   {
     name: 'Nestle SA',
@@ -89,7 +89,7 @@ export const Companies: Company[] = [
     netSales: '7.925 billion',
     numberOfEmployees: '352,000(2019)',
     numberOfFactories: '79',
-    infoAvailable: true,
+    infoAvailable: false,
     verified: false,
   },
   {
@@ -208,7 +208,7 @@ export const Companies: Company[] = [
     companyPageImg: 'assets/photoshop/company/clif.jpg',
   },
 ];
-
+ // tslint:disable-next-line
 const stats = {
   a:
     'https://www.statista.com/statistics/252097/net-sales-of-the-leading-10-confectionery-companies-worldwide/',
