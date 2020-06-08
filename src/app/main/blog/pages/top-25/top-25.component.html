@@ -20,7 +20,7 @@
           </p>
         </div>
 
-        <div class="flex-btn-container">
+        <!-- <div class="flex-btn-container">
           <div class="btn-group">
             <button
               class="btn btn-sm mr-1 selectedView"
@@ -37,9 +37,9 @@
               Table
             </button>
           </div>
-        </div>
+        </div> -->
 
-        <!-- START TRANDING POST -->
+        <!-- START GRID VIEW -->
 
         <div *ngIf="gridViewSelected">
           <div class="section tranding_post pb_70">
@@ -49,7 +49,8 @@
                   class="col-lg-6 col-sm-6"
                   *ngFor="
                     let company of companies
-                      | paginate: { itemsPerPage: 6, currentPage: p }
+                      | paginate: { itemsPerPage: 6, currentPage: p };
+                    let i = index
                   "
                 >
                   <div class="blog_post blog_grid_overlay">
@@ -68,7 +69,7 @@
                           <a
                             class="routerlink"
                             (click)="routeToCompany(company.name)"
-                            >{{ company.name }}</a
+                            >{{ 6 * (p - 1) + i + 1 }}) {{ company.name }}</a
                           >
                         </h5>
                         <div class="align-info">

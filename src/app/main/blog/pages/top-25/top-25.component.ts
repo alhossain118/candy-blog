@@ -18,6 +18,7 @@ export class Top25Component {
   public p = 1;
   public gridViewSelected = true;
   public tableViewSelected = false;
+  public itemsPerPage;
 
   public get article(): ArticleOverview {
     return Articles.find((article: ArticleOverview) => {

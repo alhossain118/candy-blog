@@ -1,89 +1,102 @@
 p {
-    margin: 20px 0;
+  margin: 20px 0;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+h5 :hover {
+  cursor: pointer;
+}
+
+table {
+  margin: 5% 0;
+}
+
+.heading-row {
+  background-color: #ff324d;
+  color: white;
+}
+
+.flex-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-group {
+  button {
+    border: 1px solid #ff324d;
+    text-transform: none;
   }
-  
-  h2,
-  h3,
-  h4 {
-    font-weight: 700;
-    text-transform: capitalize;
+  button:hover {
+    background-color: #ff324d;
   }
 
-  h5 :hover {
-    cursor: pointer;
+  .selectedView {
+    background-color: #ff324d;
+    color: white;
   }
-  .flex-btn-container {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .btn-group {
-    button {
-      border: 1px solid #FF324D;
-      text-transform: none;
-    }
+}
 
-    .selectedView {
-      background-color: #FF324D;
-      color: white;
-    }
-  }
-  
-  .topic-section {
-    margin: 5% 0;
-  }
-  
-  .fa-calendar {
-    color: #ff324d;
-    margin-right: 5px;
-  }
-  
-  .blog_meta {
-    margin: 1% 0;
-  }
-  
-  .image-layout {
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .topic-section ul li::before {
-    content: "•";
-    color: black;
-    font-size: 24px;
-    margin: 0 2%;
-  }
-  
-  .topic-section ul li {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-  }
-  
-  .url-link {
-    color: blue;
-  }
-  
-  .generic-img {
-      width: 100%;
-      margin-left: 0;
-      max-width: 600px;
-  }
+.topic-section {
+  margin: 5% 0;
+}
 
-  .align-info {
-      color: white;
-      display: flex;
-      justify-content: space-between;
+.fa-calendar {
+  color: #ff324d;
+  margin-right: 5px;
+}
 
-      button {
-          text-transform: none;
-          padding: 3px;
-      }
-  }
+.blog_meta {
+  margin: 1% 0;
+}
 
-  .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+.image-layout {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.topic-section ul li::before {
+  content: "•";
+  color: black;
+  font-size: 24px;
+  margin: 0 2%;
+}
+
+.topic-section ul li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.url-link {
+  color: blue;
+}
+
+.generic-img {
+  width: 100%;
+  margin-left: 0;
+  max-width: 600px;
+}
+
+.align-info {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    text-transform: none;
+    padding: 3px;
   }
-  
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}

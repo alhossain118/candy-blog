@@ -16,8 +16,8 @@ export const Companies: Company[] = [
   {
     name: 'Mars Wrigley Confectionery',
     location: 'Chicago, Ill., USA',
-    image: 'assets/photoshop/top-25/mars-chocolate.jpg',
-    companyPageImg: 'assets/photoshop/company/mars.jpg',
+    image: 'assets/photoshop/top-25/mars.jpg',
+    companyPageImg: 'assets/photoshop/company/mars-1.jpg',
     netSales: '18 Billion(2019)',
     website: 'https://www.mars.com/made-by-mars/mars-wrigley',
     cheifOfficer: 'Andrew Clarke(Pres. of Mars Wrigley Confectionery)',
