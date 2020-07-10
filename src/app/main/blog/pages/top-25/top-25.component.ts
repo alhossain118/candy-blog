@@ -22,7 +22,7 @@ export class Top25Component {
 
   public get article(): ArticleOverview {
     return Articles.find((article: ArticleOverview) => {
-      return article.header === 'Top 25 Candy Companies in 2020';
+      return article.header === 'Top 10 Candy Companies in 2020';
     });
   }
 

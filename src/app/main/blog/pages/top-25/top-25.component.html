@@ -13,10 +13,8 @@
         </ul>
         <div class="topic-section">
           <p>
-            Welcome to my list of the World's Top Candy Companies. The company
-            is ranked based on the annual net sales. I've included more
-            additional info about each company for the first 5. More info for
-            the remaining companies will be added soon.
+            {{ article.description }} More info for
+            additional companies will be added soon.
           </p>
         </div>
 
@@ -42,7 +40,7 @@
         <!-- START GRID VIEW -->
 
         <div *ngIf="gridViewSelected">
-          <div class="section tranding_post pb_70">
+          <div class="tranding_post pb_70">
             <div class="container">
               <div class="row">
                 <div

@@ -6,5 +6,9 @@ import { ArticleOverview, Articles } from '../../article-data/article-data';
   styleUrls: ['./sour-strips-discovery.component.scss'],
 })
 export class SourStripsDiscoveryComponent {
-  public article: ArticleOverview = Articles[0];
+  public get article(): ArticleOverview {
+    return Articles.find((article: ArticleOverview) => {
+      return article.header === 'My Journey into Sour Strips';
+    });
+  }
 }

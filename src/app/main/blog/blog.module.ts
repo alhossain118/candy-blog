@@ -13,8 +13,16 @@ import { MondelezComponent } from '../company/mondelez/mondelez.component';
 import { NestleComponent } from '../company/nestle/nestle.component';
 import { BlogRoutingModule } from './blog-routing.module';
 import { BlogComponent } from './blog.component';
+import { KetoDietComponent } from './pages/keto-diet/keto-diet.component';
 import { SourStripsDiscoveryComponent } from './pages/sour-strips-discovery/sour-strips-discovery.component';
 import { Top25Component } from './pages/top-25/top-25.component';
+
+const pages = [
+  SourStripsDiscoveryComponent,
+  Top25Component,
+  KetoDietComponent
+];
+
 @NgModule({
   imports: [
     CommonModule,
@@ -26,9 +34,8 @@ import { Top25Component } from './pages/top-25/top-25.component';
     NgxYoutubePlayerModule.forRoot(),
   ],
   declarations: [
+    ...pages,
     BlogComponent,
-    SourStripsDiscoveryComponent,
-    Top25Component,
     ArticleOverviewComponent,
     CompanyComponent,
     MarsComponent,

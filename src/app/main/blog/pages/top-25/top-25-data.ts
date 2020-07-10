@@ -32,7 +32,7 @@ export const Companies: Company[] = [
     image: 'assets/photoshop/top-25/ferrero.jpg',
     companyPageImg: 'assets/photoshop/company/ferrero.jpg',
     website: 'https://www.ferrero.com',
-    netSales: '13 Billion',
+    netSales: '13 Billion(2019)',
     cheifOfficer: 'Giovanni Ferrero(CEO)',
     numberOfEmployees: '40,000',
     numberOfFactories: '25',
@@ -59,7 +59,7 @@ export const Companies: Company[] = [
     image: 'assets/photoshop/top-25/meiji.jpg',
     website: 'https://www.meiji.com/global',
     companyPageImg: 'assets/photoshop/company/meji.jpg',
-    netSales: '9.721 Billion',
+    netSales: '9.721 Billion(2019)',
     cheifOfficer: 'Kazuo Kawamura, (President) ',
     numberOfEmployees: '17,600(2019)',
     numberOfFactories: '7',
@@ -73,7 +73,7 @@ export const Companies: Company[] = [
     website: 'https://www.hersheys.com',
     companyPageImg: 'assets/photoshop/company/hersheys.jpg',
     cheifOfficer: 'Michele Buck(CEO)',
-    netSales: '7.986 Billion',
+    netSales: '7.986 Billion(2019)',
     numberOfEmployees: '16,140(2018)',
     numberOfFactories: '17',
     infoAvailable: true,
@@ -86,7 +86,7 @@ export const Companies: Company[] = [
     website: 'https://www.nestle.com',
     companyPageImg: 'assets/photoshop/company/nestle.jpg',
     cheifOfficer: 'Ulf Mark Schneider(CEO)',
-    netSales: '7.925 billion',
+    netSales: '7.925 billion(2019)',
     numberOfEmployees: '352,000(2019)',
     numberOfFactories: '79',
     infoAvailable: false,
@@ -97,116 +97,131 @@ export const Companies: Company[] = [
     location: 'Kilchberg, Switzerland',
     image: 'assets/photoshop/top-25/lindt.jpg',
     companyPageImg: 'assets/photoshop/company/lindt.jpg',
-    netSales: '4.574 Billion',
+    netSales: '4.574 Billion(2019)',
   },
   {
     name: 'pladis',
     location: '	London, UK',
     image: 'assets/photoshop/top-25/pladis.jpg',
     companyPageImg: 'assets/photoshop/company/pladis.jpg',
-    netSales: '4.515 Billion',
+    netSales: '4.515 Billion(2019)',
   },
   {
     name: 'Haribo GmbH & Co. K.G.',
     location: 'Bonn, Germany',
     image: 'assets/photoshop/top-25/haribo.jpg',
     companyPageImg: 'assets/photoshop/company/haribo.jpg',
-    netSales: '3.3 Billion'
+    netSales: '3.3 Billion(2019)'
   },
   {
     name: 'Ezaki Glico Co. Ltd.',
     location: 'Osaka, Japan',
     image: 'assets/photoshop/top-25/glico.jpg',
     companyPageImg: 'assets/photoshop/company/glico.jpg',
-    netSales: '3.156 Billion'
+    netSales: '3.156 Billion(2019)'
   },
-  {
-    name: 'Perfetti Van Melle',
-    location: 'Spa Lainate, Italy, & Breda, Netherlands',
-    image: 'assets/photoshop/top-25/perfetti.jpg',
-    companyPageImg: 'assets/photoshop/company/perfetti.jpg',
-  },
-  {
-    name: 'General Mills',
-    location: 'Minneapolis, Minn., USA',
-    image: 'assets/photoshop/top-25/general-mills.jpg',
-    companyPageImg: 'assets/photoshop/company/general-mills.jpg',
-  },
-  {
-    name: 'Kellogg Co.',
-    location: 'Battle Creek, Mich., USA',
-    image: 'assets/photoshop/top-25/kelloggs.jpg',
-    companyPageImg: 'assets/photoshop/company/kellogs.jpg',
-  },
-  {
-    name: 'Orion Corp.',
-    location: 'Seoul, Korea',
-    image: 'assets/images/tranding_post_img1.jpg',
-  },
-  {
-    name: 'August Storck KG',
-    location: 'Berlin, Germany',
-    image: 'assets/photoshop/top-25/storck.jpg',
-    companyPageImg: 'assets/photoshop/company/storck.jpg',
-  },
-  {
-    name: 'Morinaga & Co. Ltd.',
-    location: 'Tokyo, Japan	',
-    image: 'assets/photoshop/top-25/morinaga.jpg',
-    companyPageImg: 'assets/photoshop/company/morinaga.jpg',
-  },
-  {
-    name: 'Bourbon Corp.',
-    location: 'Niigata, Japan',
-    image: 'assets/images/tranding_post_img1.jpg',
-  },
-  {
-    name: 'United Confectionary Manufacturers',
-    location: 'Moscow, Russia',
-    image: 'assets/images/tranding_post_img1.jpg',
-  },
-  {
-    name: 'Chocolat Frey AB',
-    location: 'Buchs, Switerland',
-    image: 'assets/photoshop/top-25/frey.jpg',
-    companyPageImg: 'assets/photoshop/company/frey.jpg',
-  },
-  {
-    name: 'Arcor',
-    location: 'Buenos Aires, Argentina',
-    image: 'assets/photoshop/top-25/arcor.jpg',
-    companyPageImg: 'assets/photoshop/company/arcor.jpg',
-  },
-  {
-    name: 'Valeo Foods Group',
-    location: 'Dublin, Ireland	',
-    image: 'assets/photoshop/top-25/valeo.jpg',
-    companyPageImg: 'assets/photoshop/company/valeo.jpg',
-  },
-  {
-    name: 'Crown Confectionery Co. Ltd.',
-    location: 'Seoul, Korea',
-    image: 'assets/photoshop/top-25/crown.jpg',
-    companyPageImg: 'assets/photoshop/company/crown.jpg',
-  },
-  {
-    name: 'Cacau Show',
-    location: 'Itapevi, SP, Brazil',
-    image: 'assets/photoshop/top-25/cacau.jpg',
-    companyPageImg: 'assets/photoshop/company/cacau.jpg',
-  },
-  {
-    name: 'Cemoi',
-    location: 'Perpignan, France',
-    image: 'assets/photoshop/top-25/cemoi.jpg',
-    companyPageImg: 'assets/photoshop/company/cemoi.jpg',
-  },
-  {
-    name: 'Clif Bar & Co.',
-    location: 'Emeryville, Calif.',
-    image: 'assets/photoshop/top-25/clif.jpg',
-    companyPageImg: 'assets/photoshop/company/clif.jpg',
-  },
+  // {
+  //   name: 'Perfetti Van Melle',
+  //   location: 'Spa Lainate, Italy, & Breda, Netherlands',
+  //   image: 'assets/photoshop/top-25/perfetti.jpg',
+  //   companyPageImg: 'assets/photoshop/company/perfetti.jpg',
+  //   netSales: '$2.8 Billion'
+  // },
+  // {
+  //   name: 'General Mills',
+  //   location: 'Minneapolis, Minn., USA',
+  //   image: 'assets/photoshop/top-25/general-mills.jpg',
+  //   companyPageImg: 'assets/photoshop/company/general-mills.jpg',
+  //   netSales: '$2.1 Billion'
+  // },
+  // {
+  //   name: 'Kellogg Co.',
+  //   location: 'Battle Creek, Mich., USA',
+  //   image: 'assets/photoshop/top-25/kelloggs.jpg',
+  //   companyPageImg: 'assets/photoshop/company/kellogs.jpg',
+  //   netSales: '$1.89 Billion'
+  // },
+  // {
+  //   name: 'Orion Corp.',
+  //   location: 'Seoul, Korea',
+  //   image: 'assets/images/tranding_post_img1.jpg',
+  //   netSales: '$1.767 Billion'
+  // },
+  // {
+  //   name: 'August Storck KG',
+  //   location: 'Berlin, Germany',
+  //   image: 'assets/photoshop/top-25/storck.jpg',
+  //   companyPageImg: 'assets/photoshop/company/storck.jpg',
+  //   netSales: '$1.680 Billion'
+  // },
+  // {
+  //   name: 'Morinaga & Co. Ltd.',
+  //   location: 'Tokyo, Japan	',
+  //   image: 'assets/photoshop/top-25/morinaga.jpg',
+  //   companyPageImg: 'assets/photoshop/company/morinaga.jpg',
+  //   netSales: '$1.120 Billion'
+  // },
+  // {
+  //   name: 'Bourbon Corp.',
+  //   location: 'Niigata, Japan',
+  //   image: 'assets/images/tranding_post_img1.jpg',
+  //   netSales: '$1.080 Billion'
+  // },
+  // {
+  //   name: 'United Confectionary Manufacturers',
+  //   location: 'Moscow, Russia',
+  //   image: 'assets/images/tranding_post_img1.jpg',
+  //   netSales: '$1.055 Billion'
+  // },
+  // {
+  //   name: 'Chocolat Frey AB',
+  //   location: 'Buchs, Switerland',
+  //   image: 'assets/photoshop/top-25/frey.jpg',
+  //   companyPageImg: 'assets/photoshop/company/frey.jpg',
+  //   netSales: '$1.010 Billion'
+  // },
+  // {
+  //   name: 'Arcor',
+  //   location: 'Buenos Aires, Argentina',
+  //   image: 'assets/photoshop/top-25/arcor.jpg',
+  //   companyPageImg: 'assets/photoshop/company/arcor.jpg',
+  //   netSales: '$1,005 Billion'
+  // },
+  // {
+  //   name: 'Valeo Foods Group',
+  //   location: 'Dublin, Ireland	',
+  //   image: 'assets/photoshop/top-25/valeo.jpg',
+  //   companyPageImg: 'assets/photoshop/company/valeo.jpg',
+  //   netSales: '$957 Million'
+  // },
+  // {
+  //   name: 'Crown Confectionery Co. Ltd.',
+  //   location: 'Seoul, Korea',
+  //   image: 'assets/photoshop/top-25/crown.jpg',
+  //   companyPageImg: 'assets/photoshop/company/crown.jpg',
+  //   netSales: '$939 Million'
+  // },
+  // {
+  //   name: 'Cacau Show',
+  //   location: 'Itapevi, SP, Brazil',
+  //   image: 'assets/photoshop/top-25/cacau.jpg',
+  //   companyPageImg: 'assets/photoshop/company/cacau.jpg',
+  //   netSales: '$909 Million'
+  // },
+  // {
+  //   name: 'Cemoi',
+  //   location: 'Perpignan, France',
+  //   image: 'assets/photoshop/top-25/cemoi.jpg',
+  //   companyPageImg: 'assets/photoshop/company/cemoi.jpg',
+  //   netSales: '$902 Million'
+  // },
+  // {
+  //   name: 'Clif Bar & Co.',
+  //   location: 'Emeryville, Calif.',
+  //   image: 'assets/photoshop/top-25/clif.jpg',
+  //   companyPageImg: 'assets/photoshop/company/clif.jpg',
+  //   netSales: '$900 Million'
+  // },
 ];
  // tslint:disable-next-line
 const stats = {
