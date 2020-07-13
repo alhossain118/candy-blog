@@ -1,4 +1,4 @@
-import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 import { ArticleOverview, Articles } from '../../article-data/article-data';
 import { Companies, Company } from './top-25-data';
@@ -9,10 +9,7 @@ import { Companies, Company } from './top-25-data';
   styleUrls: ['./top-25.component.scss'],
 })
 export class Top25Component {
-  constructor(
-    private router: Router,
-    private renderer: Renderer2,
-  ) {}
+  constructor(private router: Router, private renderer: Renderer2) {}
 
   public companies: Company[] = Companies;
   public p = 1;

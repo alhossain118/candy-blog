@@ -41,6 +41,6 @@ export const Articles: ArticleOverview[] = [
     Or is it just is over-hyped?`,
     image: 'assets/photoshop/article-cover/entrepreneur.jpg',
     header: 'Candy Entrepreneurship',
-    link: 'my-journey-into-sour-strips',
+    link: 'candy-entrepreneur',
   },
 ];
