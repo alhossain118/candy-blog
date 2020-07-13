@@ -36,7 +36,7 @@ export const Articles: ArticleOverview[] = [
   },
   {
     date: 'April 14, 2018',
-    description: `Interest in entrepreneurship has really taken off in the last decade. 
+    description: `Interest in entrepreneurship has really taken off in the last decade.
     So what's changed in the candy development landscape?`,
     image: 'assets/photoshop/article-cover/entrepreneur.jpg',
     header: 'Candy Entrepreneurship',

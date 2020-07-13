@@ -17,6 +17,10 @@
     font-weight: 700;
     text-transform: capitalize;
   }
+
+  p {
+    font-size: 16px;
+  }
   
   img {
     max-width: 85%;
@@ -25,4 +29,17 @@
   
   a {
     color: #ff324d;
+  }
+
+  .topic-section ul li::before {
+    content: "•";
+    color: black;
+    font-size: 24px;
+    margin: 0 2%;
+  }
+  
+  .topic-section ul li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
   }
