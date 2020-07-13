@@ -1,1 +1,38 @@
-<h2>Candy Entrpreneur</h2>
+<div *ngIf="article">
+  <div class="blog_post">
+    <div class="blog_content">
+      <div class="blog_text">
+        <h2 class="blog_heading">
+          {{ article.header }}
+        </h2>
+        <ul class="blog_meta">
+          <li>
+            <i class="fas fa-calendar"></i>
+            <span>{{ article.date }}</span>
+          </li>
+        </ul>
+        <div class="topic-section">
+          <p>
+            {{ article.description }} Initially it was thought that only
+            existing candy companies like <b>Mars Wrigley</b> and
+            <b>Hershey's</b> would reign supreme, leaving little to no room for
+            the little guy, but the landscape has changed, and every year new
+            entrepreneurs are coming to the spotlight. So what's changed?
+          </p>
+
+          <img src="assets/photoshop/other/social-media.jpg" alt="" />
+
+          <p>
+            Well, we are living the era of the internet and social media. It's
+            never been easier to connect with people and establish global trade
+            in the history of the human race than it is today. Today, people can
+            market themselves through platforms like youtube, Facebook,
+            Instagram, Twitter, TikTok, and create a brand around themselves all
+            for free. And this is what is allowing the little guy to compete
+            with the big brands, or at least get their foot in the door.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

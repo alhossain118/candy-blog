@@ -36,9 +36,8 @@ export const Articles: ArticleOverview[] = [
   },
   {
     date: 'April 14, 2018',
-    description: `A new sold out sour candy? Whattt?
-    Could there really be sour candy that actually delivers?
-    Or is it just is over-hyped?`,
+    description: `Interest in entrepreneurship has really taken off in the last decade. 
+    So what's changed in the candy development landscape?`,
     image: 'assets/photoshop/article-cover/entrepreneur.jpg',
     header: 'Candy Entrepreneurship',
     link: 'candy-entrepreneur',

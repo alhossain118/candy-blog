@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ArticleOverview, Articles } from '../article-data/article-data';
 
 @Component({
   selector: 'candy-entrepreneur',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./entrepreneur.component.scss'],
 })
 export class EntrepreneurComponent {
-  constructor() {
-    console.log('entrepreneur component loaded');
+  public get article(): ArticleOverview {
+    return Articles.find((article: ArticleOverview) => {
+      return article.header === 'Candy Entrepreneurship';
+    });
   }
 }
